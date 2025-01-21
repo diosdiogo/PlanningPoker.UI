@@ -15,18 +15,17 @@
             </div>
             <div class="password-content">
                 <input class="input-senha" type="{{inputType}}" placeholder="Senha">
-                <button class="eye-button" (onclick)="showPassword()">
-                    <!-- <i class="ph-bold {{eyeButton}}"></i> -->
+                <button class="eye-button" (click)="showPassword()">
                     <mat-icon style="margin-top: -5px;">{{ show ? 'visibility_off' : 'visibility' }}</mat-icon>
                 </button>
             </div>
             <div class="forgot-password-content">
-                <a href="javascript:void(0)" (onclick)="passwordRecovery()">Esqueceu sua senha?</a>
+                <a href="javascript:void(0)" (click)="passwordRecovery()">Esqueceu sua senha?</a>
             </div>
             <button class="button-send">
                 <mat-icon>send</mat-icon>
             </button>
-            <a id="link"></a>
+            <a class="link" (click)="creatAccount()">Criar conta</a>
             <div id="buttonDiv"></div>
         </div>
     </div>
